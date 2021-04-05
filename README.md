@@ -15,6 +15,14 @@ composer require lfbn/dynalist-client
 
 $dynalist = DynalistApi('your-api-key');
 
-$dynalist->getDocumentContent();
+// get all documents from a file
+$fileId = 'the-file-id';
+$response = $dynalist->getDocumentContent($fileId);
 
+dump($response);
+
+// send something to inbox
+$response = $dynalist->sendToInbox(0, 'hi to everyone!');
+
+dump($response);
 ```
