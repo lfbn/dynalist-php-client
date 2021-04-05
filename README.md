@@ -19,10 +19,10 @@ $dynalist = DynalistApi('your-api-key');
 $fileId = 'the-file-id';
 $response = $dynalist->getDocumentContent($fileId);
 
-dump($response);
+var_dump($response);
 
 // send something to inbox
 $response = $dynalist->sendToInbox(0, 'hi to everyone!');
 
-dump($response);
+var_dump($response);
 ```
