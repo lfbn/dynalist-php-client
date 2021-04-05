@@ -3,7 +3,7 @@
 namespace DynalistPhpClient;
 
 use Exception;
-use Symfony\Component\HttpClient\HttpClient;iik
+use Symfony\Component\HttpClient\HttpClient;
 
 /**
  * Class DynalistClient
