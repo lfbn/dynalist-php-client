@@ -14,17 +14,11 @@ class DynalistClient
     /* @var string */
     private const DYNALIST_ENDPOINT = 'https://dynalist.io/api/v1';
 
-    /* @var string */
-    private $apiKey;
-
     /**
      * DynalistClient constructor.
      * @param  string  $apiKey
      */
-    public function __construct(string $apiKey)
-    {
-        $this->apiKey = $apiKey;
-    }
+    public function __construct(private string $apiKey) {}
 
     /**
      * @param  int  $index
